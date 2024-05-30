@@ -1,0 +1,2 @@
+POSTGRES_PASSWORD=petclinic
+POSTGRES_USER=petclinic

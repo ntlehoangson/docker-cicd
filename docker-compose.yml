@@ -28,6 +28,8 @@ services:
       - POSTGRES_PASSWORD=petclinic
     ports:
       - 5433:5432
+    env_file:
+      - ./.evn
     healthcheck:
       test: [ "CMD", "pg_isready", "-U", "petclinic" ]
       interval: 10s
